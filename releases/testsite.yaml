@@ -8,7 +8,7 @@ metadata:
     fluxcd.io/automated: "true"
 #    filter.fluxcd.io/chart-image: semver:~0.4
 spec:
-  releaseName: 
+  releaseName: testsite 
   chart:
     git: git@gitlab.com:grdl/testflux
     path: charts/podinfo
