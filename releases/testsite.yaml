@@ -1,0 +1,20 @@
+---
+apiVersion: helm.fluxcd.io/v1
+kind: HelmRelease
+metadata:
+  name: testsite 
+  namespace: test
+  annotations:
+    fluxcd.io/automated: "true"
+#    filter.fluxcd.io/chart-image: semver:~0.4
+spec:
+  releaseName: 
+  chart:
+    git: git@gitlab.com:grdl/testflux
+    path: charts/podinfo
+    ref: master
+#  values:
+#    image:
+#      repository: registry.gitlab.com/grdl/testsite 
+#      tag: latest
+#
