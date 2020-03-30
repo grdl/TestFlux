@@ -13,8 +13,8 @@ spec:
     git: git@gitlab.com:grdl/testflux
     path: helm/testsite
     ref: master
-#  values:
-#    image:
-#      repository: registry.gitlab.com/grdl/testsite 
-#      tag: latest
-#
+  values:
+    image:
+      repository: registry.gitlab.com/grdl/testsite 
+      tag: latest
+
