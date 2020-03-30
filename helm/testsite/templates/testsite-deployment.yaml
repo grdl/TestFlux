@@ -1,0 +1,23 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: testsite 
+  labels:
+{{- include "default.labels" . | indent 4 }}
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: testsite 
+  template:
+    metadata:
+      labels:
+        app: testsite 
+    spec:
+      containers:
+      - name: testsite
+        image: registry.gitlab.com/grdl/testsite:latest
+        ports:
+        - name: http
+          containerPort: 80
+

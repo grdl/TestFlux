@@ -1,0 +1,16 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: testsite-ingress
+  labels:
+{{- include "default.labels" . | indent 4 }}
+spec:
+  rules:
+  - host: testsite.zapatero.tech 
+    http:
+      paths:
+      - path: /
+        backend:
+          serviceName: testsite-service 
+          servicePort: 80
+
