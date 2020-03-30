@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
       - name: testsite
-        image: registry.gitlab.com/grdl/testsite:latest
+        image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}" 
         ports:
         - name: http
           containerPort: 80

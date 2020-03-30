@@ -1,3 +1,4 @@
-# Dummy values file
-# Needed because Flux recognizes a directory as a Helm chart when containing BOTH Chart.yaml and
-# values.yaml
+image:
+    repository: registry.gitlab.com/grdl/testsite
+    tag: latest
+
