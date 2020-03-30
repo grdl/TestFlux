@@ -11,7 +11,7 @@ spec:
   releaseName: testsite 
   chart:
     git: git@gitlab.com:grdl/testflux
-    path: charts/podinfo
+    path: charts/testsite
     ref: master
 #  values:
 #    image:
