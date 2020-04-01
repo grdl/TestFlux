@@ -4,6 +4,8 @@ kind: HelmRelease
 metadata:
   name: testsite
   namespace: test
+  annotations:
+    fluxcd.io/automated: 'true'
 spec:
   releaseName: testsite
   chart:
